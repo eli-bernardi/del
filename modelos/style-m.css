@@ -1,0 +1,77 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: var(--branco);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: chocolate;
+}
+
+.caminhoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.caminhao {
+    background-color: gray;
+    border: 1px solid chocolate;
+    border-radius: 8px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.caminhao:hover {
+    background-color: chocolate;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid chocolate;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    color: var(--branco);
+}
+
+@media (max-width: 600px) {
+    .caminhoes {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .caminhao {
+        width: 80%;
+    }
+}
